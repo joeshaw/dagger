@@ -23,7 +23,7 @@ concurrency:
 jobs:
   test-modules:
     runs-on:
-      - depot-ubuntu-22.04-16
+      - depot-ubuntu-22.04-16-io
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
 
   test-module-runtimes:
     runs-on:
-      - depot-ubuntu-22.04-16
+      - depot-ubuntu-22.04-16-io
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -47,7 +47,7 @@ jobs:
 
   test-cli-engine:
     runs-on:
-      - depot-ubuntu-22.04-16
+      - depot-ubuntu-22.04-16-io
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -59,7 +59,7 @@ jobs:
 
   test-everything-else:
     runs-on:
-      - depot-ubuntu-22.04-16
+      - depot-ubuntu-22.04-16-io
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -71,7 +71,7 @@ jobs:
 
   testdev-modules:
     runs-on:
-      - depot-ubuntu-22.04-32
+      - depot-ubuntu-22.04-32-io
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -84,7 +84,7 @@ jobs:
 
   testdev-module-runtimes:
     runs-on:
-      - depot-ubuntu-22.04-32
+      - depot-ubuntu-22.04-32-io
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -97,7 +97,7 @@ jobs:
 
   testdev-container:
     runs-on:
-      - depot-ubuntu-22.04-32
+      - depot-ubuntu-22.04-32-io
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
