@@ -24,7 +24,6 @@ jobs:
   lint:
     runs-on:
       - depot-ubuntu-22.04-4
-      - dagger-0.13.1
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
@@ -40,7 +39,6 @@ jobs:
   test:
     runs-on:
       - depot-ubuntu-22.04-16
-      - dagger-0.13.1
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -56,7 +54,6 @@ jobs:
   testdev:
     runs-on:
       - depot-ubuntu-22.04-32
-      - dagger-0.13.1
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -70,7 +67,6 @@ jobs:
   test-publish:
     runs-on:
       - depot-ubuntu-22.04-4
-      - dagger-0.13.1
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -86,7 +82,6 @@ jobs:
   scan-engine:
     runs-on:
       - depot-ubuntu-22.04-4
-      - dagger-0.13.1
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
